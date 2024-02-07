@@ -1,0 +1,16 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel TestSuite" parallel="tests" thread-count="2" configfailurepolicy="continue">
+<test name="Test">
+<parameter name="pCloudy_DeviceFullName" value="GOOGLE_Pixel7_Android_13.0.0_81870"></parameter>
+	<classes>
+		<class name="KFCTest.KFCTest_MultiDevices2"></class>
+	</classes>
+</test>
+<test name="Test2">
+<parameter name="pCloudy_DeviceFullName" value="GOOGLE_Pixel7Pro_Android_13.0.0_dbf82"></parameter>
+	<classes>
+		<class name="KFCTest.KFCTest_MultiDevices2"></class>
+	</classes>
+</test>
+</suite>
